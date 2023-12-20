@@ -27,6 +27,15 @@
   </head>
 
   <body class="body-studio">
+    <div class="modal is-hidden" data-modal>
+      <div class="white-window">
+        <button class="white-window-button" type="button" data-modal-close>
+          <svg class="button-icon" width="24" height="24">
+            <use href="./images/icons.svg#modal-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <header class="header">
       <div class="header-div container">
         <!--Navigation bar-->
@@ -68,7 +77,9 @@
       <section class="hero-section section">
         <div class="hero-div container">
           <h1 class="hero-titile">Effective Solutions for Your Business</h1>
-          <button type="button" class="order-button">Order Service</button>
+          <button type="button" class="order-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- Description of our values-->
@@ -435,5 +446,7 @@
         </div>
       </div>
     </footer>
+     <script src="./js/modal.js"></script>
+</body>
   </body>
 </html>
