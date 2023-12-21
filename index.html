@@ -27,6 +27,15 @@
   </head>
 
   <body class="body-studio">
+    <div class="modal is-hidden" data-modal>
+      <div class="white-window">
+        <button class="white-window-button" type="button" data-modal-close>
+          <svg class="button-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-modal-button"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <header class="header">
       <div class="header-div container">
         <!--Navigation bar-->
@@ -437,16 +446,6 @@
         </div>
       </div>
     </footer>
-
-    <div class="modal is-hidden" data-modal>
-      <div class="white-window">
-        <button class="white-window-button" type="button" data-modal-close>
-          <svg class="button-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-modal-button"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
+    <script src="./js/modal.js"></script>
   </body>
-  <script src="./js/modal.js"></script>
 </html>
