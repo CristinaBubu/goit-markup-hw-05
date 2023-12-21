@@ -54,6 +54,9 @@ transform: translate(-50%, -50%);
     margin-right: 24px;
     margin-bottom: 536px;
     margin-left: 360px;
+    fill: currentColor;
+    background-color: #FCFCFC;
+    border: 0;
 }
    
 
