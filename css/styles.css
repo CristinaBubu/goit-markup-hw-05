@@ -659,10 +659,10 @@ background-color: #4d5ae5;
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.container-overlay:hover {
+.container-overlay:hover .overlay-paragraph {
     transform: translateY(0);
 }
-container-overlay:focus .overlay-paragraph {
+.container-overlay:focus .overlay-paragraph {
     transform: translateY(0);
 }
 
