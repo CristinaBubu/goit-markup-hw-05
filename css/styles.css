@@ -27,8 +27,10 @@ p {margin: 0;
 .modal {
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(46, 47, 66, 0.4);
     position: fixed;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -36,11 +38,13 @@ p {margin: 0;
     visibility: hidden;
     opacity: initial;
     pointer-events: fill;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .white-window {
     width: 408px;
-        height: 584px;
+        min-height: 584px;
         flex-shrink: 0;
         border-radius: 4px;
             background-color: #FCFCFC;
@@ -49,16 +53,42 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
 
 .white-window-button {
-    margin-top: 24px;
-    margin-right: 24px;
-    margin-bottom: 536px;
-    margin-left: 360px;
     fill: currentColor;
-    background-color: #FCFCFC;
     border: 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7e9fc;
+    margin: 1px solid rgba(0, 0, 0, 0, 0.1);
+    padding: 0;
+    cursor: pointer;
+    transition: background-colour 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.white-window-button:hover,
+.white-window-button:focus {
+    background-color: #404bbf;
+    border: none;
+
+}
+
+.button-icon {
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-icon:hover;
+.button-icon:focus {
+    fill: #ffffff;
 }
    
 
@@ -120,6 +150,8 @@ letter-spacing: 0.02em;
 color: var(--brand-color);
 padding: 24px 0;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+position: relative;
+
 }
 
 
@@ -128,9 +160,18 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
-.nav-link:active {text-decoration: underline;}
 
-.nav-link:visited::after {text-decoration: underline; }
+
+.nav-link::after {
+content: '';
+position: absolute;
+left: 0;
+bottom: -1px;
+height: 4px;
+background-color: #404bbf;
+border-radius: 2px;
+
+}
 
 
 .address {
