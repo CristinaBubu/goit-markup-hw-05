@@ -646,6 +646,7 @@ margin-bottom: 8px;
 .container-overlay:hover .overlay-paragraph {
     transform: translateY(0);
     transition: transform 250ms ease-out;
+    
 }
 
 .overlay-paragraph {
