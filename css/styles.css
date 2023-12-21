@@ -651,6 +651,9 @@ margin-bottom: 8px;
     
 }
 
+.container-overlay:focus .overlay-paragraph {
+    transform: translateY(0);}
+
 .overlay-paragraph {
     position: absolute;
         top: 0;
