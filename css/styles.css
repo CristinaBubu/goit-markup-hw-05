@@ -602,6 +602,7 @@ margin-bottom: 16px;
 .portfolio-paragraph:hover,
 .portfolio-paragraph:focus {
     transform: translateY(0%);
+    
 }
 
 .buttons-list {display: flex;
