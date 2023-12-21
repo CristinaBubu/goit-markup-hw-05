@@ -584,7 +584,7 @@ margin-bottom: 16px;
 .portfolio-link:focus {box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
-transform: translateY(0%);
+
 }
    
 
@@ -597,6 +597,11 @@ transform: translateY(0%);
         border-right: px solid #E7E9FC;
         text-align: left;
     
+}
+
+.portfolio-paragraph:hover,
+.portfolio-paragraph:focus {
+    transform: translateY(0%);
 }
 
 .buttons-list {display: flex;
